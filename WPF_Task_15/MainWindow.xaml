@@ -1,0 +1,395 @@
+﻿<Window x:Class="WPF_Task_15.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Task_15"
+        mc:Ignorable="d"
+        Title="Торт Медовик" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <FlowDocumentScrollViewer x:Name="docViewer">
+            <FlowDocument>
+                <Paragraph FontSize="20" FontWeight="Bold">
+                    <Floater HorizontalAlignment="Right" Width="300">
+                        <BlockUIContainer>
+                            <Image Source="Data/main.jpeg"/>
+                        </BlockUIContainer>
+                    </Floater>
+                    Торт
+                    <Hyperlink Foreground="Red" NavigateUri="https://povar.ru/recipes/tort_medovik-9816.html" RequestNavigate="Hyperlink_RequestNavigate">"Медовик"</Hyperlink>
+                </Paragraph>
+                <Paragraph>
+                    Каждому прекрасно известный торт
+                    <Run Foreground="Red">
+                        "Медовик"
+                    </Run>
+                    - это удовольствие, от которого не могут отказаться даже люди, равнодушные к сладкому. Рассказываю, как приготовить торт "Медовик" в домашних условиях.
+                </Paragraph>
+                <Paragraph>
+                    <Italic>
+                        <Underline>
+                            Описание приготовления:
+                        </Underline>
+                    </Italic>
+                </Paragraph>
+                <Paragraph>
+                    Торт "Медовик" - это классика отечественного кондитерского дела, один из наиболее популярных тортов в России. Ввиду своей огромной популярности, торт приобрел массу вариаций и интерпретаций, разные кулинары готовят его по-разному. Однако опубликованный мной весьма простой рецепт торта "Медовик" - это классический рецепт этого замечательного торта. Рецепт проверен временем, так что можете не сомневаться - будет вкусно!
+                </Paragraph>
+                <Paragraph FontStyle="Italic" TextDecorations="Underline">
+                    Ингредиенты:
+                </Paragraph>
+
+                <List MarkerStyle="Disc">
+                    <ListItem>
+                        <Paragraph>
+                            Мёд  — 4 Ст. ложки
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Яйца  — 3 Штуки
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Мука  — 4 Стакана (520 г)
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Сахар  — 2 Стакана (360 г)
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Сода  — 1 Чайная ложка
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Сметана  — 800 Грамм
+                        </Paragraph>
+                    </ListItem>
+                </List>
+
+                <Paragraph FontStyle="Italic">
+                    Как приготовить "Торт "Медовик"
+                </Paragraph>
+                <Table>
+                    <Table.Columns>
+                        <TableColumn/>
+                        <TableColumn/>
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Image Source="Data/1.jpeg"/>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Подготовим ингредиенты.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Image Source="Data/2.jpeg"/>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Берем небольшую мисочку, взбиваем в ней яйца с содой.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Image Source="Data/3.jpeg"/>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Берем глубокую кастрюлю, кладем туда мед и 1 стакан сахара. Ставим на медленный огонь.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Image Source="Data/4.jpeg"/>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    На медленном огне, помешивая, доводим смесь до кипения. Сахар к тому времени полностью растворится в меде.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Image Source="Data/5.jpeg"/>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Когда смесь начнет медленно кипеть, вводим в кастрюлю смесь яиц с содой, приготовленную в самом начале. Быстро помешивая ложкой, продолжаем нагревать смесь. Когда смесь увеличится в объеме и станет похожей на пену, снимаем смесь с огня.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Image Source="Data/6.jpeg"/>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    В получившуюся массу небольшими порциями вводим муку. Ложкой замешиваем тесто (руками месить тесто для этого торта неудобно).
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Image Source="Data/7.jpeg"/>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    У вас должно получиться плотное, вязкое тесто.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Image Source="Data/8.jpeg"/>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Получившееся тесто разделяем на 10 равных частей, каждую из которых тонко раскатываем. Делать это нужно на присыпанной мукой рабочей поверхности.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Image Source="Data/9.jpeg"/>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Из раскатанных пластов теста нужно вырезать круглые коржи. В качестве контура можно использовать подходящую по диаметру тарелку. Обрезки теста не выбрасываем - они нам еще будут нужны. Вообще, раскатывать это тесто нужно быстро - оно очень быстро твердеет и теряет эластичность.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Image Source="Data/10.jpeg"/>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Круглые коржи вместе с обрезками ставим в духовку, предварительно разогретую до 200 градусов.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Image Source="Data/11.jpeg"/>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Выпекаем ровно 5 минут, после чего вынимаем из духовки.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Image Source="Data/12.jpeg"/>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Коржи пока отставляем, а обрезки руками перетираем в крупную крошку.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Image Source="Data/13.jpeg"/>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Теперь необходимо приготовить крем. Сметану смешиваем со стаканом сахара.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Image Source="Data/14.jpeg"/>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Немножко взбиваем миксером до пышности.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Image Source="Data/15.jpeg"/>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Формируем торт. На большую плоскую тарелку кладем первый корж (желательно - самый ровный, ведь он служит основанием всей конструкции) и щедро смазываем его кремом.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Image Source="Data/16.jpeg"/>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Нехитрым способом формируем торт, выкладывая коржи друг на друга и промазывая их кремом.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Image Source="Data/17.jpeg"/>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Берем половину крошек, которые мы получили из обрезков коржей, добавляем в них столовую ложку крема. Перемешиваем.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Image Source="Data/18.jpeg"/>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Получившейся мокрой крошкой необходимо хорошенько облепить торт со всех сторон, придавая ему аккуратную форму, сглаживая неровности и т.д.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Image Source="Data/19.jpeg"/>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Оставшуюся часть крошек нужно измельчить еще меньше. Получившимися мелкими крошками обсыпаем торт по всей его поверхности.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Image Source="Data/20.jpeg"/>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Отправляем торт в холодильник хотя бы на 5-6 часов, после чего "Медовик" будет готов к употреблению. Приятного аппетита! ;)
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button x:Name="Btn_Open" Content="Open" Margin="5" Padding="5" Width="100" Click="Btn_Open_Click"/>
+            <Button x:Name="Btn_Save" Content="Save" Margin="5" Padding="5" Width="100" Click="Btn_Save_Click"/>
+            <Button x:Name="Btn_Clear" Content="Clear" Margin="5" Padding="5" Width="100" Click="Btn_Clear_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
